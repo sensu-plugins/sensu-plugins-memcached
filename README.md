@@ -5,6 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-memcached/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-memcached)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-memcached/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-memcached)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-memcached.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-memcached)
+[ ![Codeship Status for sensu-plugins/sensu-plugins-memcached](https://codeship.com/projects/f9a3d390-dbf3-0132-bdc9-1e3fe125131b/status?branch=master)](https://codeship.com/projects/79841)
 
 ## Functionality
 
