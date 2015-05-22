@@ -1,7 +1,15 @@
+
+require 'sensu-plugins-memcached/version'
+
+# Load the defaults
+
 #
-# Set gem version
+# Default class
 #
 module SensuPluginsMemcached
-  # Gem version
-  VERSION = '0.0.1.alpha.1'
+  class << self
+  end
+
+  class << self
+  end
 end

@@ -74,7 +74,7 @@ class MemcachedGraphite < Sensu::Plugin::Metric::CLI::Graphite
     exit(1)
   end
 
-  def sort_metrics(stats)
+  def sort_metrics(stats) # rubocop:disable all
     memcached_metrics = {}
     memcached_metrics['uptime'] = stats['uptime'].to_i
     memcached_metrics['pointer_size'] = stats['pointer_size'].to_i
