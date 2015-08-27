@@ -64,7 +64,7 @@ class MemcachedKeyStatsGraphite < Sensu::Plugin::Metric::CLI::Graphite
         socket.close_write
         recv = socket.read
         # #YELLOW
-        recv.each_line do |line| # rubocop:disable Style/Next
+        recv.each_line do |line|
           if line.match('PREFIX')
             _, key, _, get, _, hit, _, set, _, del = line.split(' ', -1)
             output "#{config[:scheme]}.#{key}.get", get.to_i
