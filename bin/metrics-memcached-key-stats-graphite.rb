@@ -1,4 +1,4 @@
-#! /usr/bin/env ruby
+#!/usr/bin/env ruby
 #
 #   memcached-key-stats-graphite
 #
