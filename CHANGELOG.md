@@ -5,6 +5,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased]
 
+## [0.1.1] - 2017-05-14
+### Fixed
+- Fix rubygems deployment
+
 ## [0.1.0] - 2017-05-12
 ### Changed
 - bringing gemspec standard gemspec based on skel
@@ -18,7 +22,8 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.1.1...HEAD
+[0.1.1]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.0.3...0.1.0
 [0.0.3]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.0.2...0.0.3
 [0.0.2]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.0.1...0.0.2
