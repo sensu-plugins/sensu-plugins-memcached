@@ -1,4 +1,4 @@
-#Change Log
+# Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
@@ -19,6 +19,6 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 - initial release
 
 [Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.1.0...HEAD
-[0.1.0]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.0.2...0.0.3
+[0.1.0]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.0.3...0.1.0
 [0.0.3]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.0.2...0.0.3
 [0.0.2]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.0.1...0.0.2
