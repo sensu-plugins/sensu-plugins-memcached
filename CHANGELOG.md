@@ -5,6 +5,9 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased]
 
+### Fixed
+- metrics-memcached-socket-graphite.rb: fixed issue around case sensitivity (@majormoses)
+
 ## [0.1.1] - 2017-05-14
 ### Fixed
 - Fix rubygems deployment
