@@ -58,7 +58,7 @@ class MemcachedGraphite < Sensu::Plugin::Metric::CLI::Graphite
         socket.close_write
         recv = socket.read
         recv.each_line do |line|
-          stats[line.split(' ')[1]] = line.split(' ')[2] if line =~ 'STAT'
+          stats[line.split(' ')[1]] = line.split(' ')[2] if line =~ /stat/i
         end
         metrics.update(sort_metrics(stats))
         metrics.each do |k, v|
