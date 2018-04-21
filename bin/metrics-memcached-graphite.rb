@@ -30,7 +30,7 @@
 #
 
 require 'sensu-plugin/metric/cli'
-require 'memcached'
+require 'dalli'
 require 'socket'
 
 class MemcachedGraphite < Sensu::Plugin::Metric::CLI::Graphite
@@ -54,9 +54,11 @@ class MemcachedGraphite < Sensu::Plugin::Metric::CLI::Graphite
          default: "#{::Socket.gethostname}.memcached"
 
   def run
-    cache = Memcached.new("#{config[:host]}:#{config[:port]}")
+    cache = Dalli::Client.new("#{config[:host]}:#{config[:port]}")
 
-    cache.stats.each do |k, v|
+    # cache.stats returns a hash of server => stats. Since we only have one
+    # server, we can just grab the first value and iterate over that.
+    cache.stats.values.first.each do |k, v|
       output "#{config[:scheme]}.#{k}", v
     end
 
