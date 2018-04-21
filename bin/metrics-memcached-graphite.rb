@@ -30,8 +30,8 @@
 #
 
 require 'sensu-plugin/metric/cli'
-require 'memcached'
 require 'socket'
+require 'timeout'
 
 class MemcachedGraphite < Sensu::Plugin::Metric::CLI::Graphite
   option :host,
@@ -54,10 +54,17 @@ class MemcachedGraphite < Sensu::Plugin::Metric::CLI::Graphite
          default: "#{::Socket.gethostname}.memcached"
 
   def run
-    cache = Memcached.new("#{config[:host]}:#{config[:port]}")
+    Timeout.timeout(30) do
+      TCPSocket.open(config[:host], config[:port]) do |socket|
+        socket.print "stats\r\n"
+        socket.close_write
+        socket.read.each_line do |line|
+          _, k, v = line.strip.split(" ", 3)
+          next unless k
 
-    cache.stats.each do |k, v|
-      output "#{config[:scheme]}.#{k}", v
+          output "#{config[:scheme]}.#{k}", v
+        end
+      end
     end
 
     ok
