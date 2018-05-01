@@ -59,7 +59,7 @@ class MemcachedGraphite < Sensu::Plugin::Metric::CLI::Graphite
         socket.print "stats\r\n"
         socket.close_write
         socket.read.each_line do |line|
-          _, k, v = line.strip.split(" ", 3)
+          _, k, v = line.strip.split(' ', 3)
           next unless k
 
           output "#{config[:scheme]}.#{k}", v
