@@ -6,6 +6,9 @@ Which is based on [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
 
+### Fixed
+- fixed issues with install time due to unmaintained `memchached` gem and replaced with `dali` which has active development, is written in pure ruby (no c extensions), and is designed to be a drop in replacement (@bleything)
+
 ## [0.1.2] - 2017-10-31
 ### Changed
 - updated location to our CHANGELOG guidelines (@majormoses)
