@@ -6,6 +6,7 @@ Which is based on [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
 
+## [0.1.3] - 2018-05-02
 ### Fixed
 - fixed issues with install time due to unmaintained `memchached` gem and replaced with `dali` which has active development, is written in pure ruby (no c extensions), and is designed to be a drop in replacement (@bleything)
 
@@ -33,7 +34,8 @@ Which is based on [Keep A Changelog](http://keepachangelog.com/)
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.1.2...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.1.3...HEAD
+[0.1.3]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.1.2...0.1.3
 [0.1.2]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.1.1...0.1.2
 [0.1.1]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/sensu-plugins/sensu-plugins-memcached/compare/0.0.3...0.1.0
